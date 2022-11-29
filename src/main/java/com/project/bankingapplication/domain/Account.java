@@ -1,4 +1,4 @@
-package com.project.bankingapplication.account;
+package com.project.bankingapplication.domain;
 
 import java.util.List;
 
@@ -20,7 +20,7 @@ public class Account {
 	@GeneratedValue
 	private Integer id;
 	private String name;
-	private Integer balance;
+	private double balance;
 
 	@OneToMany(mappedBy = "account")
 	@JsonIgnore
@@ -49,11 +49,11 @@ public class Account {
 		this.name = name;
 	}
 
-	public Integer getBalance() {
+	public double getBalance() {
 		return balance;
 	}
 
-	public void setBalance(Integer balance) {
+	public void setBalance(double balance) {
 		this.balance = balance;
 	}
 

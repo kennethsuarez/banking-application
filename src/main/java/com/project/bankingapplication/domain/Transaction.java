@@ -1,4 +1,4 @@
-package com.project.bankingapplication.account;
+package com.project.bankingapplication.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -14,7 +14,7 @@ public class Transaction {
 	@GeneratedValue
 	private Integer id;
 	private String transactionType;
-	private Integer amount;
+	private double amount;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JsonIgnore
@@ -45,13 +45,13 @@ public class Transaction {
 
 
 
-	public Integer getAmount() {
+	public double getAmount() {
 		return amount;
 	}
 
 
 
-	public void setAmount(Integer amount) {
+	public void setAmount(double amount) {
 		this.amount = amount;
 	}
 
