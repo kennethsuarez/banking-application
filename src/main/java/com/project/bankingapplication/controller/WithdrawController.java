@@ -20,8 +20,8 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import com.project.bankingapplication.domain.Account;
 import com.project.bankingapplication.domain.Transaction;
 import com.project.bankingapplication.exception.AccountNotFoundException;
-import com.project.bankingapplication.service.AccountRepository;
-import com.project.bankingapplication.service.TransactionRepository;
+import com.project.bankingapplication.repository.AccountRepository;
+import com.project.bankingapplication.repository.TransactionRepository;
 
 @RestController
 public class WithdrawController {

@@ -1,4 +1,4 @@
-package com.project.bankingapplication.service;
+package com.project.bankingapplication.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
