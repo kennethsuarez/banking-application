@@ -12,9 +12,7 @@ import jakarta.persistence.OneToMany;
 @Entity(name = "account_details")
 public class Account {
 	
-	protected Account() {
-		
-	}
+	protected Account() {}
 
 	@Id
 	@GeneratedValue

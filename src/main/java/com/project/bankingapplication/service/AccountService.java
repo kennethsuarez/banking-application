@@ -13,8 +13,11 @@ import com.project.bankingapplication.repository.AccountRepository;
 @Component
 public class AccountService {
 	
-	@Autowired
 	private AccountRepository accountRepository;
+	
+	public AccountService(AccountRepository accountRepository) {
+		this.accountRepository = accountRepository;
+	}
 
 	public Integer register(Account account) {
 		Account savedAccount = accountRepository.save(account);
